@@ -1,0 +1,26 @@
+Installation
+
+------Step 1: Clone the Repository------
+Clone the repository to your local machine using the following command:
+
+git clone https://github.com/anjuparanagama/Meteo_Earth
+
+------Step 2: Set Up the Server------
+Install a local server like XAMPP or WAMP.
+Place the cloned project folder into the htdocs (XAMPP) or www (WAMP) directory.
+
+-------Step 3: Configure the Database------
+Open your database management tool .
+Create a new database using given code .
+
+------Step 5: Start the Server------
+Start Apache and MySQL from your local server control panel.
+Access the app in your browser at http://localhost/<project_folder>.
+Usage
+Open the application in your web browser.
+Register a new account or log in with an existing account.
+Enter the desired location to view the current weather details.
+
+
+Deployment
+To deploy the Weather App on a live server:
