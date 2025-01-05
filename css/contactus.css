@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    min-height: 100vh;
+    background-image: url('img/home.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+  
+  /* Header Styles */
+  header {
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  header .logo {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1rem; 
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  nav a:hover{
+    color: bisque;
+    transform: scale(1.1);
+  }
+
+  nav a.active {
+    font-weight: bold;
+  }
+  
+  /* Main Section */
+
+  
+  .contact-section {
+    background: rgba(255, 255, 255, 0.2);;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    color: #ffd700;
+  }
+  
+  .contact-section p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: whitesmoke;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  
+  label {
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 12px 40px;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius:25px ;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: chocolate;
+  }
+  
+  /* Success Message */
+  #success-message {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    margin-top: 2rem;
+  }
+  

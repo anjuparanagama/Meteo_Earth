@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Searches</title>
+    <link rel="stylesheet" href="css/Recent.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1 class="logo">Meteo Earth</h1>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="details.html">Weather Forecast</a>
+            <a href="Recent.html">Recent</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="Aboutus.html" class="active">About Us</a>
+          </nav>
+        </div>
+    </header>
+    
+    <div>
+        <section class="recent-section">
+            <div class="headtopic">
+                <h1>Recent Searches</h1>
+            </div>
+
+            <!-- Search Bar for filtering -->
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="search-bar"
+                    placeholder="Search your recent history..."
+                />
+            </div>
+
+            <!-- Form for adding recent search -->
+            <div class="form-container">
+                <h2>Enter Your Recent Search</h2>
+                <form action="insert_search.php" method="POST">
+                    <label for="location">Location:</label>
+                    <input type="text" name="location" id="location" required>
+
+                    <label for="temperature">Temperature:</label>
+                    <input type="text" name="temperature" id="temperature" required>
+
+                    <label for="weather">Weather:</label>
+                    <input type="text" name="weather" id="weather" required>
+
+                    <button type="submit">Add Search</button>
+                </form>
+            </div>
+
+            <!-- Recent Search List -->
+            <div class="recent-content">
+                <ul class="recent-list" id="search-results">
+                    <li><strong>Colombo:</strong> Sunny, 30°C</li>
+                    <li><strong>Kandy:</strong> Cloudy, 24°C</li>
+                    <li><strong>Galle:</strong> Rainy, 28°C</li>
+                    <li><strong>Nuwara Eliya:</strong> Foggy, 16°C</li>
+                    <li><strong>Jaffna:</strong> Windy, 32°C</li>
+                </ul>
+                <p class="info-text">
+                    * These are your most recent weather searches. Stay updated!
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Meteo Earth. All rights reserved.</p>
+    </footer>
+</body>
+</html>

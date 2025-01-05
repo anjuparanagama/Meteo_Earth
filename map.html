@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather MapView</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            display: flex;
+            margin: 0;
+		    background: url('img/home.jpg');
+			background-size: cover;
+        }
+        
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        
+        .sidebar {
+			margin-top:20px;
+            width: 150px;
+            border: none;
+			border-radius: 25px;
+			background: rgba(0, 0, 0, 0.5);
+			box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            text-align: center;
+            font-weight: bold;
+            height: 90vh;
+			margin-left: 10px;
+			border-radius:15px;
+        }
+		
+		.nav-link img {
+			width:25px;
+			height:25px;
+		}
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 0 20px 20px 20px;
+			color:#ffffff;
+        }
+        
+        .content h1 {
+            margin: 10px 5px 0 5px;
+        }
+		
+		
+		.cst {
+			align-items:center;
+			text-align: center;
+			font-size:25px;
+		}
+		
+		.cst p {
+			font-size:12px;
+		}
+		
+		.map-container {
+		  height: 80vh;
+		  margin-top:2vh;
+		}
+
+
+		.map-container iframe {
+		  border: none;
+		  border-radius: 10px;
+		}
+		
+		.footer{
+		   text-align:center;
+		   align-items:center;
+		}
+		
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+        <div class="sidebar">
+            <a href="#" class="nav-link">
+                <img src="img/hm.png" alt="Home icon"><br> Home<hr>
+            </a>
+            <a href="map.html" class="nav-link">
+                <img src="img/map.png" alt="map Icon"><br> Map view<hr>
+            </a>
+            <a href="Recent.html" class="nav-link">
+                <img src="img/recent.png" alt="recent icon"><br> Recent<hr>
+            </a>
+            <a href="aboutus.html" class="nav-link">
+                <img src="img/aboutus.png" alt="About Us icon"><br> About Us<hr>
+            </a>
+            <a href="#" class="nav-link">
+                <img src="img/alerts.png" alt="Alerts Icon"><br> Alerts<hr>
+            </a>
+            <a href="reg.html" class="nav-link">
+                <img src="img/log.png" alt="user Icon"><br> User<hr>
+            </a>
+			<a href="contactus.html" class="nav-link">
+                <img src="img/contact.png" alt="user Icon"><br> Contact Us<hr>
+            </a>
+            <a href="subs.html" class="nav-link">
+				<img src="img/sub.png" alt="user Icon"><br>Subscription<hr>
+            </a>
+        </div>
+        
+        <div class="content">
+		  <div class ="cst">
+			<h1>Weather Map view</h1>
+			<p> you can customize your weather app using wind toggle in map </p>
+		  </div>
+
+		  <div class="map-container">
+			<iframe src="https://embed.windy.com/?lat=40.7128&lon=-74.0060&zoom=5&level=surface&overlay=wind&menu=1&message=undefined&marker=undefined&calendar=undefined&pressure=undefined&units=metric&location=coordinates" 
+			  width="100%" 
+			  height="100%"></iframe>
+		  </div>
+		  <div class="footer">
+		    <p><b>Powered By MeteoEarth™ 2024</b></p>
+		  </div>
+		</div>
+
+	</div>
+</body>
+</html>

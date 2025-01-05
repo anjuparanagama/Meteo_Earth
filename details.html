@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            display: flex;
+            margin: 0;
+		    background: url('img/home.jpg');
+			background-size: cover;
+        }
+        
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        
+        .sidebar {
+			margin-top:20px;
+            width: 150px;
+            border: none;
+			border-radius: 25px;
+			background: rgba(0, 0, 0, 0.5);
+			box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            text-align: center;
+            font-weight: bold;
+            height: 100vh;
+			margin-left: 10px;
+			border-radius:15px;
+        }
+		
+		.nav-link img {
+			width:25px;
+			height:25px;
+		}
+		
+		.search {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		.input {
+			width: 100%;
+			padding: 15px 20px;
+			font-size: 15px;
+			border: none;
+			border-radius: 25px;
+			background: rgba(255, 255, 255, 0.9);
+			box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+			transition: all 0.3s ease;
+		}
+
+		.input:focus {
+			outline: none;
+			background: white;
+			box-shadow: 0 8px 10px rgba(0,0,0,0.6);
+		}
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .content h2 {
+            margin: 10px 5px;
+			font-size:36px;
+        }
+		
+		.content p {
+            margin: 10px 0;
+        }
+		
+		#temperature {
+			font-size:58px;
+			font-family: "Lucida Console", "Courier New", monospace;
+			font-weight:bold;
+		}
+		.dmain {
+			display: flex;
+			flex-direction: column;
+
+		}
+		
+		.maindetails {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin:20px;
+			border: none;
+			border-radius: 25px;
+			background: rgba(0,0,0,0.5);
+			box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+			align-items:center;
+			color:white;
+		}
+		
+		.forecast {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.hourly-forecast {
+			display:flex;
+			flex-direction:row;
+			justify-content: space-around;
+			margin:20px;
+			border: none;
+			border-radius: 25px;
+			background: rgba(0,0,0,0.5);
+			box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+		}
+		
+		.daily-forecast {
+			display:flex;
+			flex-direction:row;
+			justify-content: space-around;
+			border:1px;
+			margin:20px;
+			border: none;
+			border-radius: 25px;
+			background: rgba(0,0,0,0.5);
+			box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+		}
+		
+		.forecast-item {
+			color:white;
+			padding:15px;
+			align-items:center;
+			text-align:center;
+		}
+		
+		.fr {
+			align-items:center;
+		}
+		
+		
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <a href="#" class="nav-link">
+                <img src="img/hm.png" alt="Home icon"><br> Home<hr>
+            </a>
+            <a href="map.html" class="nav-link">
+                <img src="img/map.png" alt="map Icon"><br> Map view<hr>
+            </a>
+            <a href="Recent.html" class="nav-link">
+                <img src="img/recent.png" alt="recent icon"><br> Recent<hr>
+            </a>
+            <a href="aboutus.html" class="nav-link">
+                <img src="img/aboutus.png" alt="About Us icon"><br> About Us<hr>
+            </a>
+            <a href="#" class="nav-link">
+                <img src="img/alerts.png" alt="Alerts Icon"><br> Alerts<hr>
+            </a>
+            <a href="reg.html" class="nav-link">
+                <img src="img/log.png" alt="user Icon"><br> User<hr>
+            </a>
+			<a href="contactus.html" class="nav-link">
+                <img src="img/contact.png" alt="user Icon"><br> Contact Us<hr>
+            </a>
+            <a href="subs.html" class="nav-link">
+				<img src="img/sub.png" alt="user Icon"><br>Subscription<hr>
+            </a>
+        </div>
+        
+        <div class="content">
+            <div class="search">
+                <form id="search-form" action="details.html" method="get">
+                    <input type="text" placeholder="Enter your location" class="input" id="city-input" name="city" required>
+                </form>
+            </div>
+			<div class="dmain">
+				<div class="maindetails">
+					<div class="fr">
+						<h2 id="city-name"></h2>					
+						<p id="temperature"></p>
+					</div>
+					<div class="md">
+						<img id="weather-image" alt="Weather condition" />
+						<p id="description"></p>
+					</div>
+					<div class="end">
+						<p id="humidity"></p>
+						<p id="wind-speed"></p>
+					</div>
+				</div>
+				<div class="forecast" id="forecast">
+					
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <script src="js/details.js"></script>
+</body>
+</html>

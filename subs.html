@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            display: flex;
+            margin: 0;
+		    background: url('img/home.jpg');
+			background-size: cover;
+        }
+        
+        .main {
+            display: flex;
+            flex: 1;
+        }
+        
+        .sidebar {
+			margin-top:20px;
+            width: 150px;
+            border: none;
+			border-radius: 25px;
+			background: rgba(0, 0, 0, 0.5);
+			box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            text-align: center;
+            font-weight: bold;
+            height: 90vh;
+			margin-left: 10px;
+			border-radius:15px;
+        }
+		
+		.nav-link img {
+			width:25px;
+			height:25px;
+		}
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+		.content h1 {
+			text-align:center;
+			color:#ffffff;
+		}
+		
+        .subscription-container {
+            display: flex;
+            align-items: center;
+			justify-content:center;
+            padding: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+			color:#ffffff;
+        }
+
+        .subscription-box {
+            border-radius: 8px;
+			background: rgba(0, 0, 0, 0.5);
+			box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+			
+        }
+
+		.subscription-container :hover {
+			border: 1px solid white;
+		}
+		
+		.subscription-container h2:hover {
+		    border:none;
+		}
+		
+		.subscription-container p:hover {
+		    border:none;
+		}
+
+		.subscription-container button:hover {
+		    border:none;
+		}
+
+		.subscription-container .price:hover {
+		    border:none;
+		}
+		
+        .subscription-box h2 {
+            color: #ffffff;
+        }
+
+        .subscription-box p {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #002D62;
+        }
+		
+		.footer{
+		   text-align:center;
+		   align-items:center;
+		   padding-top:30px;
+		   color:white;
+		}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+        <div class="sidebar">
+            <a href="#" class="nav-link">
+                <img src="img/hm.png" alt="Home icon"><br> Home<hr>
+            </a>
+            <a href="map.html" class="nav-link">
+                <img src="img/map.png" alt="map Icon"><br> Map view<hr>
+            </a>
+            <a href="Recent.html" class="nav-link">
+                <img src="img/recent.png" alt="recent icon"><br> Recent<hr>
+            </a>
+            <a href="aboutus.html" class="nav-link">
+                <img src="img/aboutus.png" alt="About Us icon"><br> About Us<hr>
+            </a>
+            <a href="#" class="nav-link">
+                <img src="img/alerts.png" alt="Alerts Icon"><br> Alerts<hr>
+            </a>
+            <a href="reg.html" class="nav-link">
+                <img src="img/log.png" alt="user Icon"><br> User<hr>
+            </a>
+			<a href="contactus.html" class="nav-link">
+                <img src="img/contact.png" alt="user Icon"><br> Contact Us<hr>
+            </a>
+            <a href="subs.html" class="nav-link">
+				<img src="img/sub.png" alt="user Icon"><br>Subscription<hr>
+            </a>
+        </div>
+        
+        <div class="content">
+			<h1><u>Subscription Plans</u></h1>
+			<div class="subscription-container">
+				<div class="subscription-box">
+					<h2>Free Plan</h2>
+					<p>Home               ✅</p>
+					<p>Map view           ✅</p>
+					<p>Recent             ✖️</p>
+					<p>N0tifications      ✖️</p>
+					<p>Real-time Updates  ✖️</p>
+					<p>Account sharing    ✖️</p>
+					<p>Voice Alerts       ✖️</p><br/>
+					<div class="price">$0/month</div>
+					<button class="button">Subscribe</button>
+				</div>
+
+				<div class="subscription-box">
+					<h2>Premium Plan</h2>
+					<p>Home               ✅</p>
+					<p>Map view           ✅</p>
+					<p>Recent             ✅</p>
+					<p>N0tifications      ✅</p>
+					<p>Real-time Updates  ✅</p>
+					<p>Account sharing    ✅</p>
+					<p>Voice Alerts       ✅</p><br/>
+					<div class="price">$5/month</div>
+					<button class="button">Subscribe</button>
+				</div>
+			</div>
+			<div class="footer">
+			    <p><b>Powered By MeteoEarth™ 2024</b></p>
+			</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Earth - Login</title>
+    <link rel="stylesheet" href="css/logstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Meteo Earth<sup>TM</sup></h1>
+            <p class="subtitle">Your Trusted Weather Details Provider</p>
+        <div class ="login-box">    
+            <div class="login-form">
+                <img src="img/log.png" alt="Login Icon" class="login-icon">
+                <h2>LOGIN</h2>
+                
+                <div class="form-group">
+					<form id="loginForm" method="POST" action="login.php">
+						<div class = "user-name">
+							<label for="name"><b>User Name :</b></label>
+							<input type="text" id="name" name="name" placeholder="Enter Your Name">
+						</div>
+						
+						<div class = "pwd">
+							<label for="password"><b>Password :</b></label>
+							<input type="password" id="password" name="password" placeholder="Enter Password">
+							<a class = "fpwd" href =  >forget password</a>
+						</div>
+						
+						<div class="login-btn">
+							<button type="submit">LOGIN</button>
+						</div>
+					</form>
+                </div>
+
+				<div class = "register">
+					<p>If you don't have an Account<br>
+					<a href = "newuser.html" > Create New Account </a>
+					</p>
+					<p class="hm" ><a href="index.html">Back to Home</p>
+				</div>
+					
+            </div>
+		</div>
+        </div>
+        <footer>
+            Powered By MeteoEarth™ 2024
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo Earth - Login</title>
+    <link rel="stylesheet" href="css/newuserstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Meteo Earth<sup>TM</sup></h1>
+            <p class="subtitle">Your Trusted Weather Details Provider</p>
+        <div class ="reg-box">    
+            <div class="reg-form">
+                <img src="img/log.png" alt="user Icon" class="user-icon">
+                <h2>User Registration</h2>
+                
+                <div class="form-group">
+					<form id="registerForm" method="POST" action="auth.php">
+						<div class ="name">
+							<label for="name"><b>First Name :</b></label>
+							<input type="text" id="name" name="name" placeholder="Enter Your first Name only">
+						</div>
+						
+						<div class = "country">
+							<label for="country"><b>Country :</b></label>
+							<input type="text" id="country" name="country" placeholder="Enter your country">
+						</div>
+						
+						<div class = "email">
+							<label for="email"><b>E-mail :</b></label>
+							<input type="email" id="email" name="email" placeholder="Enter E-mail Address">
+						</div>
+						
+						<div class = "pwd">
+							<label for="password"><b>Password :</b></label>
+							<input type="password" id="password" name="password" placeholder="Enter Password">
+						</div>
+						<div  class="login-btn">
+							<button type="submit">Register</button>	
+						</div>
+					</form>
+                </div>		
+					
+				<div class = "register">
+					<p class="hm" ><a href="index.html">Back to Home</p>
+				</div>
+            </div>
+		</div>
+        </div>
+        <footer>
+            Powered By MeteoEarth™ 2024
+        </footer>
+    </div>
+</body>
+</html>
